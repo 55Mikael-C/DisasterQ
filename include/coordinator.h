@@ -10,5 +10,5 @@ int selectMenu();
 void reportVictim(PriorityQueue& criticalQueue, Queue& standardQueue, int& counter);
 void dispatchRescue(Stack& dispatchLog, PriorityQueue& criticalQueue, Queue& standardQueue);
 void displayQueues();
-void searchVictim();
+void searchVictim(PriorityQueue& criticalQueue, Queue& standardQueue);
 #endif

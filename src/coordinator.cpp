@@ -93,3 +93,34 @@ void dispatchRescue(Stack& dispatchLog, PriorityQueue& criticalQueue, Queue& sta
         cout << "[System] No victims pending in either queue.\n";
     }
 }
+
+// Option 4: Search by name or location across both queues
+void searchVictim(PriorityQueue& criticalQueue, Queue& standardQueue) {
+    int searchChoice;
+    string keyword;
+ 
+    cout << "\n--- SEARCH VICTIM ---\n";
+    cout << "1. Search by name\n";
+    cout << "2. Search by location\n";
+    cout << "Choice: ";
+    cin >> searchChoice;
+    cin.ignore();
+ 
+    if (searchChoice == 1) {
+        cout << "Enter name: ";
+        getline(cin, keyword);
+        cout << "\n[Critical Queue]\n";
+        criticalQueue.searchByName(keyword);
+        cout << "[Standard Queue]\n";
+        standardQueue.searchByName(keyword);
+    } else if (searchChoice == 2) {
+        cout << "Enter location: ";
+        getline(cin, keyword);
+        cout << "\n[Critical Queue]\n";
+        criticalQueue.searchByLocation(keyword);
+        cout << "[Standard Queue]\n";
+        standardQueue.searchByLocation(keyword);
+    } else {
+        cout << "[Error] Invalid choice.\n";
+    }
+}

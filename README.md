@@ -19,7 +19,13 @@ This is how the algorithm will flow:
 - First, it reads the severity rate of the victim
 - Then it checks if it's severe enough for priority queue or not
 - For dispatching, priority queued victims are first in line, checking to see who is next in the priority queue after the first one, then it goes to standard queue for dispatching
-- Then if needed, a search for a victim can be conducted  
+- Then if needed, a search for a victim can be conducted
+
+Iterative Vs Recursive Comparison:
+Which is faster?
+- Iteration is faster than recursion in terms of unnecessary use of computer memory because you only have the loop running in a single function instead of the CPU wasting resources by having to remember which part of a function you were executing before you called a different function․ In your Standard Queue‚ every iteration loop only needs a fixed amount of memory․ In your Priority Queue‚ every Recursion uses up part of the "Call Stack" at every level of the heap․ Thus‚ iteration is more memory-efficient‚ and less prone to "Stack Overflow" errors for large data․
+Which is easier to understand?
+- The answer depends entirely on the shape of your data: Iteration is easier for linear structures, like your standard linked list, because it mimics reading a simple list from top to bottom. However, Recursion is very often the easier one of the two understand because of data structures like the Heap data structure the programmers used and the code structure mirrors the branching "parent-child" relationship of a tree. While an iterative tree-traversal would require complex manual management of a stack, recursion allows you to handle branching paths with just a few lines of well aligned code.
   
 Key features:
 - Victim intake with name, location, and injury severity scale

@@ -93,3 +93,10 @@ void dispatchRescue(Stack& dispatchLog, PriorityQueue& criticalQueue, Queue& sta
         cout << "[System] No victims pending in either queue.\n";
     }
 }
+
+// Option 3: Display all pending victims in both queues
+void displayQueues(PriorityQueue& criticalQueue, Queue& standardQueue) {
+    cout << "\n--- DISPLAY ALL PENDING VICTIMS ---\n";
+    criticalQueue.startRecursiveDisplay();
+    standardQueue.displayIterative();
+}

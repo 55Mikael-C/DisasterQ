@@ -26,7 +26,13 @@ Which is faster?
 - Iteration is faster than recursion in terms of unnecessary use of computer memory because you only have the loop running in a single function instead of the CPU wasting resources by having to remember which part of a function you were executing before you called a different function․ In your Standard Queue‚ every iteration loop only needs a fixed amount of memory․ In your Priority Queue‚ every Recursion uses up part of the "Call Stack" at every level of the heap․ Thus‚ iteration is more memory-efficient‚ and less prone to "Stack Overflow" errors for large data․
 Which is easier to understand?
 - The answer depends entirely on the shape of your data: Iteration is easier for linear structures, like your standard linked list, because it mimics reading a simple list from top to bottom. However, Recursion is very often the easier one of the two understand because of data structures like the Heap data structure the programmers used and the code structure mirrors the branching "parent-child" relationship of a tree. While an iterative tree-traversal would require complex manual management of a stack, recursion allows you to handle branching paths with just a few lines of well aligned code.
-  
+
+Design Choices
+- The system prioritizes order and safety over efficiency. By choosing a Max-Heap data structure, the system guarantees that the severity level of the victims is the priority for critical cases. By choosing a Linked List, it ensures that the system can remain fair for everybody else. The biggest trade-off made throughout the project is the memory being used over the reliability of the system because it uses extra memory to ensure that when a dispatcher asks "Who is next?", the answer is calculated in O(1) or O(log n) time, ensuring no delay in life-saving decisions.
+
+Team Members:
+- 
+
 Key features:
 - Victim intake with name, location, and injury severity scale
 - FIFO queue for standard victims; priority queue for critical cases

@@ -15,15 +15,18 @@ string generateID(int num) {
 int selectMenu() {
     int choice;
     do {
-        cout << "\n\033[36m===== DISASTERQ: DISASTER RESPONSE COORDINATION SYSTEM =====\033[0m\n";
-        cout << "1. Report new victim" << endl;
-        cout << "2. Dispatch rescue team (process next victim)" << endl;
-        cout << "3. Display all pending victims" << endl;
-        cout << "4. Search victim by name or location" << endl;
-        cout << "5. View dispatch log" << endl;
-        cout << "6. Exit" << endl;
-
-        cout << "your choice: ";
+        cout << "\n╔══════════════════════════════════════╗\n";
+        cout << "║      " << "\033DISASTERQ - RESPONSE CENTER\033[0m" << "     ║\n";
+        cout << "╠══════════════════════════════════════╣\n";
+        cout << "║  1. Accept Victim Report             ║\n";
+        cout << "║  2. Dispatch Next Victim             ║\n";
+        cout << "║  3. Display All Pending Victims      ║\n";
+        cout << "║  4. Search Victim                    ║\n";
+        cout << "║  5. View Dispatch Log                ║\n";
+        cout << "║  6. Exit                             ║\n";
+        cout << "╚══════════════════════════════════════╝\n";
+        
+        cout << "Enter choice: ";
         cin >> choice;
 
         if (cin.fail() || choice < 1 || choice > 6) {

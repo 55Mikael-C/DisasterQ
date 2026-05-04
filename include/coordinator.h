@@ -3,6 +3,7 @@
 
 std::string generateID(int num);
 int selectMenu();
+void reportVictim();
 void dispatchRescue();
 void displayQueues();
 void searchVictim();

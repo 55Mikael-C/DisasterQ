@@ -2,6 +2,10 @@
 #include <limits>   // needed for numeric_limits
 #include <string>
 #include "coordinator.h"
+#include "priority_queue.h"
+#include "queue.h"
+#include "stack.h"
+
 using namespace std;
 
 string generateID(int num) {
@@ -37,4 +41,8 @@ int selectMenu() {
     } while (choice < 1 || choice > 7);
 
     return choice;
+}
+
+void reportVictim(){
+
 }

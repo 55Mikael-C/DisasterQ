@@ -1,13 +1,19 @@
 #include <iostream>
 #include "coordinator.h"
+#include "priority_queue.h"
+#include "queue.h"
 #include "stack.h"
 #include "victim.h"
+
 
 using namespace std;
 
 int main(){
 
     Stack dispatchLog;
+    PriorityQueue criticalQueue;
+    Queue standardQueue;
+
 
     bool isActive = true;
     while(isActive){

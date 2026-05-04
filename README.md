@@ -36,4 +36,4 @@ Team Members:
 - RikaSetsuka || Cedrick Endaya
 
 Acknowledgement
--
+We, as the team that worked on this system, would like to give our thanks to Ma'am Fatima Marie Agdon, MSCS, for the guidance, teachings, support and insights that she has given us throughout the development of the project. Her dedication to all of her students, not only us, have greatly contributed to how we understood the data structures and algorithms that we have used, and the overall completion of this project is thanks to her.

@@ -13,9 +13,16 @@ Queue:
 
 Priority Queue:
 - This uses Arrays as its data structure via Heap. This helps with the sorting of the victims in severe conditions as Heap will prioritize the most severe case in the priority queue. Though because it is an array, the priority queue can only hold up to 100 victims at a time because these arrays have a set limit on it.
+
+This is how the algorithm will flow:
+- System uses two primary data structures: Arrays via Heap for Priority Queue and Linked List for the Queue.
+- First, it reads the severity rate of the victim
+- Then it checks if it's severe enough for priority queue or not
+- For dispatching, priority queued victims are first in line, checking to see who is next in the priority queue after the first one, then it goes to standard queue for dispatching
+- Then if needed, a search for a victim can be conducted  
   
 Key features:
-- Victim intake with name, location, and injury severity (1–5 scale)
+- Victim intake with name, location, and injury severity scale
 - FIFO queue for standard victims; priority queue for critical cases
 - Rescue team dispatch with a stack-based log for undo support
 - Iterative and recursive display of all pending victims

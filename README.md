@@ -11,8 +11,8 @@ Stacks:
 Queue:
 - A Singly Linked List Queue was specifically used as the data structure for this part because of its high performance and compatibility with the task, being storing the victims in the list by the order they arrivee, following the logic of FIFO (First In,  First Out). This uses a O(1) time constraint for enqueue, dequeue, and peeking in the linked list. While searching the linked list will use the O(1) to look from the front to back to find a specific name, location, or severity rate.
 
-
-
+Priority Queue:
+- This uses Arrays as its data structure via Heap. This helps with the sorting of the victims in severe conditions as Heap will prioritize the most severe case in the priority queue. Though because it is an array, the priority queue can only hold up to 100 victims at a time because these arrays have a set limit on it.
   
 Key features:
 - Victim intake with name, location, and injury severity (1–5 scale)

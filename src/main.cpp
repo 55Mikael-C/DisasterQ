@@ -22,8 +22,8 @@ int main(){
         switch(choice){
             case 1: reportVictim(criticalQueue, standardQueue, arrivalCounter); break; 
             case 2: dispatchRescue(dispatchLog, criticalQueue, standardQueue); break; 
-            case 3: displayQueues(criticalQueue, standardQueue); break; //displayQueues()
-            case 4: break; //searchVictim()
+            case 3: displayQueues(criticalQueue, standardQueue); break;
+            case 4: searchVictim(criticalQueue, standardQueue);break; 
             case 5: dispatchLog.display(); break;
             case 6: isActive = false; break; //exit
         };

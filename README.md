@@ -31,12 +31,9 @@ Design Choices
 - The system prioritizes order and safety over efficiency. By choosing a Max-Heap data structure, the system guarantees that the severity level of the victims is the priority for critical cases. By choosing a Linked List, it ensures that the system can remain fair for everybody else. The biggest trade-off made throughout the project is the memory being used over the reliability of the system because it uses extra memory to ensure that when a dispatcher asks "Who is next?", the answer is calculated in O(1) or O(log n) time, ensuring no delay in life-saving decisions.
 
 Team Members:
-- 
+- 55Mikael-C || Mikael Enrico Catapang
+- Lelemonsquared || Jex Rommel Maralit
+- RikaSetsuka || Cedrick Endaya
 
-Key features:
-- Victim intake with name, location, and injury severity scale
-- FIFO queue for standard victims; priority queue for critical cases
-- Rescue team dispatch with a stack-based log for undo support
-- Iterative and recursive display of all pending victims
-- Search by victim name or location
-- Menu-driven console interface designed for emergency coordinators
+Acknowledgement
+-

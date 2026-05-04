@@ -9,7 +9,8 @@ int main(){
 
     Stack dispatchLog;
 
-    while(true){
+    bool isActive = true;
+    while(isActive){
         int choice = selectMenu();
         switch(choice){
             case 1: break; //reportVictim()
@@ -17,7 +18,7 @@ int main(){
             case 3: break; //displayQueues()
             case 4: break; //searchVictim()
             case 5: dispatchLog.display(); break;
-            case 6: break; //exit
+            case 6: isActive = false; break; //exit
         };
     };
     

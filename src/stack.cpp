@@ -12,13 +12,23 @@ Stack::Stack() : top(nullptr), size(0) {}
 Stack::~Stack() {
     // Free all nodes on destruction
     while (!isEmpty()) {
-        pop();
+        clear();
     }
 }
 
 // ─────────────────────────────────────────────
 // Core Operations
 // ─────────────────────────────────────────────
+
+// For the destructor
+void Stack::clear() {
+    while (top != nullptr) {
+        StackNode* temp = top;
+        top = top->next;
+        delete temp;
+    }
+    size = 0;
+}
 
 // Push: logs a newly dispatched victim onto the stack
 void Stack::push(const Victim& victim) {
@@ -33,7 +43,7 @@ void Stack::push(const Victim& victim) {
          << ") has been logged.\n";
 }
 
-// Pop: undoes the last dispatch, removes and returns the top record
+// Pop: undoes the last dispatch, removes and returns the top record // may not be utilized
 bool Stack::pop() {
     if (isEmpty()) {
         cout << "[Stack] Dispatch log is empty. Nothing to undo.\n";

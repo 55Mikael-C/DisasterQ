@@ -17,6 +17,8 @@ private:
     StackNode* top;
     int size;
 
+    void clear();
+
 public:
     // Constructor & Destructor
     Stack();
